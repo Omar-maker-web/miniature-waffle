@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap'); 
+
+
+
+
+@keyframes slide {
+    0%, 100% { opacity: 1; }
+    33.33%, 66.66% { opacity: 0; }
+  }
+  @keyframes highlight {
+    0%, 100% { background-color: #333; }
+    33.33%, 66.66% { background-color: #ccc; }
+  }
+  .carousel {
+    position: relative;
+    width: 300px;
+    height: 200px;
+  }
+.carousel img {
+    position: absolute;
+    width: 100%;
+    animation-name: slide;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+  }
+  .carousel img:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .carousel img:nth-child(2) {
+    animation-delay: 3s;
+  }
+  .carousel img:nth-child(3) {
+    animation-delay: 6s;
+  }
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    animation-name: highlight;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+  }
+ .indicator:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .indicator:nth-child(2) {
+    animation-delay: 3s;
+  }
+  .indicator:nth-child(3) {
+    animation-delay: 6s;
+  }
+
+.carousel{
+display:flex;
+margin-left:600px;
+  width:30%;
+  margin-top:-950px;
+}
+.title{
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+  display:flex;
+  width:500px;
+  font-size:70px;
+
+}
+#p{
+ 
+  
+  font-size:40px;
+  
+  
+}
+
+#button1{
+  
+  width:150px;
+  height:50px;
+ background-color:yellow;  
+ border-radius:100px;
+  margin-top:500px;
+  h3{
+    display:flex;
+    justify-content:center;
+      align-items:center;
+    
+  }
+}
+#button1:hover{
+background-color: rgba(255, 255, 0, 0.5);
+
+}
+
+#button2{
+  
+    width:150px;
+  height:50px;
+ background-color:yellow;  
+ border-radius:100px;
+  margin-top:-70px;
+  
+  margin-left:200px;
+  h3{
+  display:flex;
+    justify-content:center;
+      align-items:center;
+    a{
+      
+      color:black;
+    }
+  }
+}
+
+#button2:hover{
+background-color: rgba(255, 255, 0, 0.5);
+
+}
+
+#nav ul{
+  a{
+    color:black;
+  }
+  display: flex; /
+   
+  padding:0px ; 
+  
+  li{
+    list-style:none;
+    margin-right: 20px;
+  }
+  display:flex;
+  justify-content: flex-end;
+}
+#buy{
+  
+  
+width:25px;
+  height:auto;
+}
+
+
+
+
+</style>
+</head>
+<body>
+  
+  <div id="nav">
+    
+    <ul>
+      
+      
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">colors</a></li>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#"><img id="buy" src="https://th.bing.com/th/id/OIP.qZ22ZrAVSKLRbjX5qyAgigHaEf?rs=1&pid=ImgDetMain" alt="">Buy now</a></li>
+    </ul>
+    
+    
+  </div>
+  
+  
+  <div id="intro">
+  <div class="title">
+  <h1>New level of sound experience</h1>
+    
+  </div>
+  
+  <div id="p"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget felis eget nunc lobortis mattis aliquam faucibus.</p></div>
+  
+  
+ <div class="carousel">
+  <img src="https://th.bing.com/th/id/OIP.20e6_c6AAeyigR6DvspQ7wAAAA?rs=1&pid=ImgDetMain">
+  <img src="https://th.bing.com/th/id/OIP.Mp3gCa_UYJjuJMtrAEqJ0QAAAA?rs=1&pid=ImgDetMain">
+  <img src="https://th.bing.com/th/id/OIP.cborSI4db1fJ7fAx4gYu8QAAAA?rs=1&pid=ImgDetMain">
+   
+   <div class="indicators">
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+  </div>
+</div> 
+    </div>
+  
+  
+  <div id="button1"><h3>Purchase now</h3></div>
+  
+  <div id="button2"><h3><a href="#">Read more</a></h3></div>
+</body>
+</html>
